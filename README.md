@@ -1,26 +1,22 @@
-# Kalro knowledge hub
+# KALRO Knowledge Hub
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+*Agricultural Research Knowledge Management System*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gats-projects-e787eeb0/v0-kalro-knowledge-hub)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/102PePRq8gb)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://github.com/Andy1118-ai/kalro)
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+KALRO Knowledge Hub is a comprehensive agricultural research knowledge management system designed to organize, manage, and disseminate agricultural research information and resources.
 
-## Deployment
+## Features
 
-Your project is live at:
-
-**[https://vercel.com/gats-projects-e787eeb0/v0-kalro-knowledge-hub](https://vercel.com/gats-projects-e787eeb0/v0-kalro-knowledge-hub)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/102PePRq8gb](https://v0.dev/chat/projects/102PePRq8gb)**
+- **Document Management**: Upload, categorize, and manage agricultural research documents
+- **Advanced Search**: Powerful search functionality across all content
+- **Category Management**: Organize content by agricultural domains
+- **Admin Dashboard**: Complete administrative interface for content management
+- **User Authentication**: Secure login system for administrators
+- **Analytics**: Track usage and performance metrics
 
 ## Getting Started
 
@@ -54,14 +50,19 @@ JWT_SECRET=change-me
 npm run dev
 ```
 
+## Deployment
+
+This project is configured for easy deployment on Vercel. See `VERCEL_DEPLOYMENT.md` for detailed deployment instructions.
+
+## Technology Stack
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **Styling**: Tailwind CSS, Radix UI
+- **Database**: MySQL
+- **Authentication**: JWT
+- **Deployment**: Vercel
+
 ## Notes
 - In development, API routes return mock data from `data/mock-data.ts`.
 - Admin routes are protected by `middleware.ts` which checks for `auth_token` cookie.
 - Use the Admin login page to obtain a token; in development, any password is accepted for an existing mock user email.
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
